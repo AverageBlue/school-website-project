@@ -25,6 +25,10 @@ img {
     padding: 0px;
 }
 
+#left-nav {
+    padding-top: 5px
+}
+
 .hr {
     width:5px;
      
