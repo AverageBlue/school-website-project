@@ -1,0 +1,29 @@
+.semi-circle {
+    width: 800px;
+    height: 40px;
+    background-color: #c2c2c2;
+    border-radius: 1000px 1000px 1000px 1000px;
+    margin-top: 50px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.rect {
+    width: 100px;
+    height: 150px;
+    background-color: #c2c2c2;
+    margin-left: 20px;
+}
+
+.h-flex {
+    margin-top: 10px;
+}
+
+.hr {
+    width:5px;
+     
+}
