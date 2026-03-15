@@ -21,6 +21,8 @@ img {
 
 .h-flex {
     margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 .hr {
