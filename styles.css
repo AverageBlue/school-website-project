@@ -17,6 +17,7 @@ img {
     height: 150px;
     background-color: #c2c2c2;
     margin-left: 20px;
+    border-radius: 15px;
 }
 
 .h-flex {
@@ -41,4 +42,9 @@ img {
 #account {
     width: 50px;
     height: 50px;
+}
+
+#Product-box {
+    Width: 50;
+    height: 50;
 }
