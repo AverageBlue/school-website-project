@@ -13,38 +13,46 @@ img {
 }
 
 .rect {
-    width: 100px;
-    height: 150px;
+    width: 250px;
+    height: 300px;
     background-color: #c2c2c2;
-    margin-left: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
     border-radius: 15px;
 }
 
 .h-flex {
     margin-top: 10px;
-    margin-bottom: 0px;
-    padding: 0px;
-}
-
-#left-nav {
-    padding-top: 5px
 }
 
 .hr {
     width: 5px;
+     
 }
 
-#shopping-cart {
-    width: 100px;
-    height: 100px;
+#Shopping-cart {
+    Height: 110px;
+    width: 110px;
 }
 
-#account {
-    width: 50px;
-    height: 50px;
+#Account {
+    height: 85px;
+    width: 85px;
 }
 
-#Product-box {
-    Width: 50;
-    height: 50;
+#rect-other {
+    width: 250px;
+    height: 300px;
+    background-color: #c2c2c2;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+
+#microwave {
+    width: 220px;
+    height: 180px;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
