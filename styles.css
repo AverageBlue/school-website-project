@@ -56,3 +56,11 @@ img {
     margin-right: 15px;
     margin-left: 15px;
 }
+
+#fridge {
+    width: 220px;
+    height: 180px;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
