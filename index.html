@@ -6,69 +6,169 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
+    <div class="container-fluid px-0" style="background-color: rgb(85, 125, 227);">
         <div class="row justify-content-start">
             <div class="col-2">
-                <img src="Logo.png">
-             </div>
-             <div class="col-8">
-                <div class="semi-circle">
-             </div>
+                <img src="Logo.png" id="logo">
+            </div>
+            <div class="col-7">
+                <form action="/search" method="get">
+                    <input type="search" name="q" placeholder="Search..." id="search-bar">
+                </form>
+            </div>
+            <div class="col-2">
+                <div class="dropdown">
+                    <img src="Shopping Cart.png" id="Shopping-cart" alt="menu trigger">
+                    <div class="dropdown-content">
+                        <a id="Shopping-cart-slot1"></a>
+                        <a id="Shopping-cart-slot2"></a>
+                        <a id="Shopping-cart-slot3"></a>
+                        <a id="shopping-cart-slot4"></a>
+                        <a id="shopping-cart-slot5"></a>
+                        <a id="shopping-cart-slot6"></a>
+                        <a id="shopping-cart-slot7"></a>
+                        <a id="shopping-cart-slot8"></a>
+                        <a id="shopping-cart-slot9"></a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
             </div>
             <div class="col-1">
-                <img src="Account Button.png" id="Account">
+                <div>
+                    <img src="Account Button.png" id="Account">
+                </div>
             </div>
-         <div class="col-1">
-          <img src="Shopping cart.png" id="Shopping-cart">
-         </div>
         </div>
     </div>
+    <body>
         <hr class="h-flex">
     <div class="container">
         <div class="row justify-content-start">
             <div class="col-4">
                 <div class="rect">
+                    Microwave, Model 1
                     <img src="Microwave1.png" id="microwave">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML1()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
                 </div>
             </div>
             <div class="col-4">
                 <div class="rect">
+                    Fridge, Model 1
                     <img src="Fridge1.png" id="fridge">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML2()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
                 </div>
             </div>
             <div class="col-4">
                 <div class="rect">
+                    Oven, Model 1
                     <img src="Oven1.png" id="fridge">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML3()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
+                </div>
+            </div>
+              <div class="col-4">
+                <div class="rect">
+                    Microwave, Model 2
+                    <img src="Microwave1.png" id="microwave">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML4()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row justify-content-start" style="background-color: blue;">
+        <div class="row justify-content-start">
+    
             <div class="col-4">
-                <div class="rect" id="rect-other"></div>
+                <div class="rect-other">
+                    Fridge, Model 2
+                    <img src="Fridge1.png" id="fridge">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML5()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
+                </div>
             </div>
             <div class="col-4">
-                <div class="rect" id="rect-other"></div>
-            </div>
-            <div class="col-4">
-                <div class="rect" id="rect-other"></div>
+                <div class="rect-other">
+                    Oven, Model 2
+                    <img src="Oven1.png" id="fridge">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML6()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-     <div class="container">
         <div class="row justify-content-start">
             <div class="col-4">
-                <div class="rect" id="rect-other"></div>
+                <div class="rect-other">
+                    Microwave, Model 3
+                    <img src="Microwave1.png" id="microwave">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML7()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
+                </div>
             </div>
             <div class="col-4">
-                <div class="rect" id="rect-other"></div>
+                <div class="rect-other">
+                    Fridge, Model 3
+                    <img src="Fridge1.png" id="fridge">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML8()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
+                </div>
             </div>
             <div class="col-4">
-                <div class="rect" id="rect-other"></div>
+                <div class="rect-other">
+                    Oven, Model 3
+                    <img src="Oven1.png" id="fridge">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="changeHTML9()" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">
+                    </button>
+                </div>
             </div>
         </div>
     </div>
+<script>
+function changeHTML1() {
+    document.getElementById("Shopping-cart-slot1").innerHTML = "Microwave, Model 1"
+}
+function changeHTML2() {
+    document.getElementById("Shopping-cart-slot2").innerHTML = "Fridge, Model 1"
+}
+function changeHTML3() {
+    document.getElementById("Shopping-cart-slot3").innerHTML = "Oven, Model 1"
+}
+function changeHTML4() {
+    document.getElementById("Shopping-cart-slot4").innerHTML = "Microwave, Model 2"
+}
+function changeHTML5() {
+    document.getElementById("Shopping-cart-slot5").innerHTML = "Fridge, Model 2"
+}
+function changeHTML6() {
+    document.getElementById("Shopping-cart-slot6").innerHTML = "Oven, Model 2"
+}
+function changeHTML7() {
+    document.getElementById("Shopping-cart-slot7").innerHTML = "Microwave, Model 3"
+}
+function changeHTML8() {
+    document.getElementById("Shopping-cart-slot8").innerHTML = "Fridge, Model 3"
+}
+function changeHTML9() {
+    document.getElementById("Shopping-cart-slot9").innerHTML = "Oven, Model 3"
+}
+</script>
 </body>
 </html>
