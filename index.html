@@ -12,9 +12,8 @@
                 <img src="Logo.png" id="logo">
             </div>
             <div class="col-7">
-                <form action="/search" method="get">
-                    <input type="search" name="q" placeholder="Search..." id="search-bar">
-                </form>
+                <input type="text" name="q" placeholder="Search..." id="search-bar">
+                <button></button>
             </div>
             <div class="col-2">
                 <div class="dropdown">
@@ -23,12 +22,12 @@
                         <a id="Shopping-cart-slot1"></a>
                         <a id="Shopping-cart-slot2"></a>
                         <a id="Shopping-cart-slot3"></a>
-                        <a id="shopping-cart-slot4"></a>
-                        <a id="shopping-cart-slot5"></a>
-                        <a id="shopping-cart-slot6"></a>
-                        <a id="shopping-cart-slot7"></a>
-                        <a id="shopping-cart-slot8"></a>
-                        <a id="shopping-cart-slot9"></a>
+                        <a id="Shopping-cart-slot4"></a>
+                        <a id="Shopping-cart-slot5"></a>
+                        <a id="Shopping-cart-slot6"></a>
+                        <a id="Shopping-cart-slot7"></a>
+                        <a id="Shopping-cart-slot8"></a>
+                        <a id="Shopping-cart-slot9"></a>
                         <a href="#">Checkout</a>
                     </div>
                 </div>
@@ -74,8 +73,10 @@
                     </button>
                 </div>
             </div>
-              <div class="col-4">
-                <div class="rect">
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-4">
+                <div class="rect-other">
                     Microwave, Model 2
                     <img src="Microwave1.png" id="microwave">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
@@ -84,9 +85,6 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-start">
-    
             <div class="col-4">
                 <div class="rect-other">
                     Fridge, Model 2
@@ -142,33 +140,53 @@
         </div>
     </div>
 <script>
-function changeHTML1() {
+    function changeHTML1() {
     document.getElementById("Shopping-cart-slot1").innerHTML = "Microwave, Model 1"
-}
-function changeHTML2() {
+    }
+    function changeHTML2() {
     document.getElementById("Shopping-cart-slot2").innerHTML = "Fridge, Model 1"
-}
-function changeHTML3() {
+    }
+    function changeHTML3() {
     document.getElementById("Shopping-cart-slot3").innerHTML = "Oven, Model 1"
-}
-function changeHTML4() {
+    }
+    function changeHTML4() {
     document.getElementById("Shopping-cart-slot4").innerHTML = "Microwave, Model 2"
-}
-function changeHTML5() {
+    }
+    function changeHTML5() {
     document.getElementById("Shopping-cart-slot5").innerHTML = "Fridge, Model 2"
-}
-function changeHTML6() {
+    }
+    function changeHTML6() {
     document.getElementById("Shopping-cart-slot6").innerHTML = "Oven, Model 2"
-}
-function changeHTML7() {
+    }
+    function changeHTML7() {
     document.getElementById("Shopping-cart-slot7").innerHTML = "Microwave, Model 3"
-}
-function changeHTML8() {
+    }
+    function changeHTML8() {
     document.getElementById("Shopping-cart-slot8").innerHTML = "Fridge, Model 3"
-}
-function changeHTML9() {
+    }
+    function changeHTML9() {
     document.getElementById("Shopping-cart-slot9").innerHTML = "Oven, Model 3"
-}
+    }
+</script>
+<script>
+    const input = document.getElemntById("search-bar");
+
+    input.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+
+            const value = input.value.toLowerCase();
+
+            if (value === 'microwave') {
+                formaction="Microwavesearch.html"
+            }
+            else if (value === 'fridge') {
+
+            }
+            else if (value === 'Oven') {
+
+            }
+        }
+    });
 </script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-AUS">
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="Test.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+<input type="text" id="keywordField" placeholder="Type 'red' or 'blue' then press Enter">
+<script>
+const input = document.getElementById('keywordField');
+
+input.addEventListener('keydown', function(event) {
+    // 1. Check if the key pressed was 'Enter'
+    if (event.key === 'Enter') {
+        
+        // 2. Get the current text and make it lowercase
+        const value = input.value.toLowerCase();
+
+        // 3. Run functions based on the specific word
+        if (value === 'red') {
+            document.body.style.backgroundColor = 'red';
+            console.log('Action: Screen turned red');
+        } 
+        else if (value === 'blue') {
+            document.body.style.backgroundColor = 'blue';
+            console.log('Action: Screen turned blue');
+        } 
+        else {
+            alert("Unknown keyword: " + value);
+        }
+
+        // Optional: Clear the field after pressing enter
+        input.value = '';
+    }
+});
+</script>
+</body>
