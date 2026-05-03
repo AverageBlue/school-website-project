@@ -18,7 +18,7 @@
             <div class="col-2">
                 <div class="dropdown">
                     <img src="Shopping Cart.png" id="Shopping-cart" alt="menu trigger">
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" id="cart-contents">
                         <a id="Shopping-cart-slot1"></a>
                         <a id="Shopping-cart-slot2"></a>
                         <a id="Shopping-cart-slot3"></a>
@@ -48,7 +48,7 @@
                     Microwave, Model 1
                     <img src="Microwave1.png" id="microwave">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML1()" class="dropbtn">
+                    <button onclick="addToCart('Microwave, Model 1')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -58,7 +58,7 @@
                     Fridge, Model 1
                     <img src="Fridge1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML2()" class="dropbtn">
+                    <button onclick="addToCart('Fridge, Model 1')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -68,7 +68,7 @@
                     Oven, Model 1
                     <img src="Oven1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML3()" class="dropbtn">
+                    <button onclick="addToCart('Oven, Model 1')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -80,7 +80,7 @@
                     Microwave, Model 2
                     <img src="Microwave1.png" id="microwave">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML4()" class="dropbtn">
+                    <button onclick="addToCart('Microwave, Model 2')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -90,7 +90,7 @@
                     Fridge, Model 2
                     <img src="Fridge1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML5()" class="dropbtn">
+                    <button onclick="addToCart('Fridge, Model 2')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -100,7 +100,7 @@
                     Oven, Model 2
                     <img src="Oven1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML6()" class="dropbtn">
+                    <button onclick="addToCart('Oven, Model 2')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -112,7 +112,7 @@
                     Microwave, Model 3
                     <img src="Microwave1.png" id="microwave">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML7()" class="dropbtn">
+                    <button onclick="addToCart('Microwave, Model 3')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -122,7 +122,7 @@
                     Fridge, Model 3
                     <img src="Fridge1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML8()" class="dropbtn">
+                    <button onclick="addToCart('Fridge, Model 3')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -132,7 +132,7 @@
                     Oven, Model 3
                     <img src="Oven1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="changeHTML9()" class="dropbtn">
+                    <button onclick="addToCart('Oven, Model 3')" class="dropbtn">
                         <img src="Plus Button.png" id="plus">
                     </button>
                 </div>
@@ -140,50 +140,29 @@
         </div>
     </div>
 <script>
-    function changeHTML1() {
-    document.getElementById("Shopping-cart-slot1").innerHTML = "Microwave, Model 1"
-    }
-    function changeHTML2() {
-    document.getElementById("Shopping-cart-slot2").innerHTML = "Fridge, Model 1"
-    }
-    function changeHTML3() {
-    document.getElementById("Shopping-cart-slot3").innerHTML = "Oven, Model 1"
-    }
-    function changeHTML4() {
-    document.getElementById("Shopping-cart-slot4").innerHTML = "Microwave, Model 2"
-    }
-    function changeHTML5() {
-    document.getElementById("Shopping-cart-slot5").innerHTML = "Fridge, Model 2"
-    }
-    function changeHTML6() {
-    document.getElementById("Shopping-cart-slot6").innerHTML = "Oven, Model 2"
-    }
-    function changeHTML7() {
-    document.getElementById("Shopping-cart-slot7").innerHTML = "Microwave, Model 3"
-    }
-    function changeHTML8() {
-    document.getElementById("Shopping-cart-slot8").innerHTML = "Fridge, Model 3"
-    }
-    function changeHTML9() {
-    document.getElementById("Shopping-cart-slot9").innerHTML = "Oven, Model 3"
+    slot = 1
+    function addToCart(item) {
+        cart = document.getElementById("cart-contents");
+        var link = document.createElement('div');
+        link.innerText = item;
+        cart.appendChild(link);
     }
 </script>
 <script>
-    const input = document.getElemntById("search-bar");
+    const input = document.getElementById("search-bar");
 
     input.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
-
             const value = input.value.toLowerCase();
 
             if (value === 'microwave') {
-                formaction="Microwavesearch.html"
+                document.location = 'microwave.html';
             }
             else if (value === 'fridge') {
-
+                document.location = 'fridge.html';
             }
-            else if (value === 'Oven') {
-
+            else if (value === 'oven') {
+                document.location = 'oven.html';
             }
         }
     });
