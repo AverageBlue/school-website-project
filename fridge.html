@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-AUS">
 <head>
@@ -17,9 +16,17 @@
             <div class="col-2">
                 <div class="dropdown">
                     <img src="Shopping Cart.png" id="Shopping-cart" alt="menu trigger">
-                    <div class="dropdown-content">
-                        <div id="cart-contents"></div>
-                        <div><a href="#">Checkout</a></div>
+                    <div class="dropdown-content" id="cart-contents">
+                        <a id="Shopping-cart-slot1"></a>
+                        <a id="Shopping-cart-slot2"></a>
+                        <a id="Shopping-cart-slot3"></a>
+                        <a id="Shopping-cart-slot4"></a>
+                        <a id="Shopping-cart-slot5"></a>
+                        <a id="Shopping-cart-slot6"></a>
+                        <a id="Shopping-cart-slot7"></a>
+                        <a id="Shopping-cart-slot8"></a>
+                        <a id="Shopping-cart-slot9"></a>
+                        <a href="#">Checkout</a>
                     </div>
                 </div>
             </div>
@@ -36,16 +43,6 @@
         <div class="row justify-content-start">
             <div class="col-4">
                 <div class="rect">
-                    Microwave, Model 1
-                    <img src="Microwave1.png" id="microwave">
-                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="addToCart('Microwave, Model 1')" class="dropbtn">
-                        <img src="Plus Button.png" id="plus">
-                    </button>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="rect">
                     Fridge, Model 1
                     <img src="Fridge1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
@@ -56,28 +53,6 @@
             </div>
             <div class="col-4">
                 <div class="rect">
-                    Oven, Model 1
-                    <img src="Oven1.png" id="fridge">
-                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="addToCart('Oven, Model 1')" class="dropbtn">
-                        <img src="Plus Button.png" id="plus">
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-start">
-            <div class="col-4">
-                <div class="rect-other">
-                    Microwave, Model 2
-                    <img src="Microwave1.png" id="microwave">
-                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="addToCart('Microwave, Model 2')" class="dropbtn">
-                        <img src="Plus Button.png" id="plus">
-                    </button>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="rect-other">
                     Fridge, Model 2
                     <img src="Fridge1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
@@ -87,29 +62,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="rect-other">
-                    Oven, Model 2
-                    <img src="Oven1.png" id="fridge">
-                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="addToCart('Oven, Model 2')" class="dropbtn">
-                        <img src="Plus Button.png" id="plus">
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-start">
-            <div class="col-4">
-                <div class="rect-other">
-                    Microwave, Model 3
-                    <img src="Microwave1.png" id="microwave">
-                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="addToCart('Microwave, Model 3')" class="dropbtn">
-                        <img src="Plus Button.png" id="plus">
-                    </button>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="rect-other">
+                <div class="rect">
                     Fridge, Model 3
                     <img src="Fridge1.png" id="fridge">
                     <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
@@ -118,18 +71,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="rect-other">
-                    Oven, Model 3
-                    <img src="Oven1.png" id="fridge">
-                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
-                    <button onclick="addToCart('Oven, Model 3')" class="dropbtn">
-                        <img src="Plus Button.png" id="plus">
-                    </button>
-                </div>
-            </div>
         </div>
-    </div>
 <script>
     slot = 1
     function addToCart(item) {

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-AUS">
+<head>
+    <title>Ding lee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+    <div class="container-fluid px-0" style="background-color: rgb(85, 125, 227);">
+        <div class="row justify-content-start">
+            <div class="col-2">
+                <img src="Logo.png" id="logo">
+            </div>
+            <div class="col-7">
+                <input type="text" name="q" placeholder="Search..." id="search-bar">
+            </div>
+            <div class="col-2">
+                <div class="dropdown">
+                    <img src="Shopping Cart.png" id="Shopping-cart" alt="menu trigger">
+                    <div class="dropdown-content" id="cart-contents">
+                        <a id="Shopping-cart-slot1"></a>
+                        <a id="Shopping-cart-slot2"></a>
+                        <a id="Shopping-cart-slot3"></a>
+                        <a id="Shopping-cart-slot4"></a>
+                        <a id="Shopping-cart-slot5"></a>
+                        <a id="Shopping-cart-slot6"></a>
+                        <a id="Shopping-cart-slot7"></a>
+                        <a id="Shopping-cart-slot8"></a>
+                        <a id="Shopping-cart-slot9"></a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <div>
+                    <img src="Account Button.png" id="Account">
+                </div>
+            </div>
+        </div>
+    </div>
+    <body>
+        <hr class="h-flex">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">
+                <div class="rect">
+                    Microwave, Model 1
+                    <img src="Microwave1.png" id="microwave">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="addToCart('Microwave, Model 1')" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">   
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rect">
+                    Microwave, Model 2
+                    <img src="Microwave1.png" id="microwave">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="addToCart('Microwave, Model 2')" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">   
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rect">
+                    Microwave, Model 3
+                    <img src="Microwave1.png" id="microwave">
+                    <p style="font-weight: bolder;" id="Underlined-text"> Add To Cart </p>
+                    <button onclick="addToCart('Microwave, Model 3')" class="dropbtn">
+                        <img src="Plus Button.png" id="plus">   
+                    </button>
+                </div>
+            </div>
+        </div>
+<script>
+    slot = 1
+    function addToCart(item) {
+        cart = document.getElementById("cart-contents");
+        var link = document.createElement('div');
+        link.innerText = item;
+        cart.appendChild(link);
+    }
+</script>
+<script>
+    const input = document.getElementById("search-bar");
+
+    input.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const value = input.value.toLowerCase();
+
+            if (value === 'microwave') {
+                document.location = 'microwave.html';
+            }
+            else if (value === 'fridge') {
+                document.location = 'fridge.html';
+            }
+            else if (value === 'oven') {
+                document.location = 'oven.html';
+            }
+        }
+    });
+</script>
+</body>
+</html>
